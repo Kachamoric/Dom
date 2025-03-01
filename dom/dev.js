@@ -35,12 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             alert("Task marked as completed!");
 
-            // Create a new log entry
+           
             const logEntry = document.createElement("p");
             logEntry.textContent = `Task "${this.parentElement.parentElement.querySelector("h1").textContent}" marked as completed.`;
             logEntry.classList.add("text-gray-700", "text-sm", "border-b", "py-2");
 
-            // Append log entry
+            
             activityLog.appendChild(logEntry);
         });
     });
